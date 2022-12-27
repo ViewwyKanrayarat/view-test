@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  backend-test:
+    image: backend-test
+    container_name: backendjaa
+    ports: 
+      - 3000:3000
+    environment:
+      - PORT=3000
+      - DB_HOST=203.151.199.181:27017
+      - DB_USERNAME=admin
+      - DB_PASSWORD=admin%40inet!
+      - DB_NAME=kong_test
+      - MANAGEAI_KEY=fN69mXXIw0e34nUXjvdaDrHnpLVflrbs
+      - API_AI=https://ai-api.manageai.co.th/ai/timber/api/v1/detection
